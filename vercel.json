@@ -1,8 +1,8 @@
 {
     "builds": [{
-        "src": "ADV103/wsgi.py",
+        "src": "mejos_drf/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
     },
     {
         "src": "build_files.sh",
@@ -16,7 +16,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "ADV103/wsgi.py"
+            "dest": "mejos_drf/wsgi.py"
         }
     ]
 }
